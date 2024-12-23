@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Bootstrap Icons  CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!--font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- global css -->
+    <link rel="stylesheet" href="../css/global css.css">
+
+
+
+   
+
+    <style>
+        /* nav bar style start */
+
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .logout-butt {
+            color: red !important;
+        }
+
+        li.responsive-border {
+            font-size: 1.5em;
+        }
+
+
+        /*  */
+        @media (min-width: 992px) {
+            li.responsive-border {
+                border-bottom: none !important;
+                /* Ensure the rule is applied */
+            }
+        }
+
+        /* nav bar style end */
+    </style>
+</head>
+
+<body style="background-color: #ffffff;">
+
+        <!-- Navbar start -->
+        <nav class="navbar navbar-expand-lg " style="background-color: var(--voilet);">
+            <div class="container-fluid ms-lg-2 me-lg-2">
+    
+                <!-- brand logo -->
+    
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo.png" class="cus-logo  img-fluid" alt="brand" width="180"
+                        style="border-radius: 10px;">
+                </a>
+    
+    
+    
+                <!-- toggler menu only visible on small screen -->
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;font-size: 50px;border-color: white;"></i>
+                </button>
+    
+    
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <!-- links -->
+                    <ul class="nav navbar-nav ms-auto  text-start align-items-lg-center align-items-md-stretch  ">
+    
+    
+                        <li class="nav-item me-3 text-start border-bottom responsive-border py-2">
+                            <!-- Adds margin to the right -->
+                            <a href="#" class="nav-link"><i class="bi bi-search me-2"></i>Search</a>
+                        </li>
+    
+    
+                        <!-- this links are only visible in mobile screen -->
+                        <li class="nav-item d-lg-none border-bottom responsive-border py-2">
+                            <a href="#" class="nav-link">My profile</a>
+                        </li>
+    
+                        <li class="nav-item d-lg-none border-bottom responsive-border py-2">
+                            <a href="#" class="nav-link">My Order</a>
+                        </li>
+    
+                        <li class="nav-item d-lg-none border-bottom responsive-border py-2">
+                            <a href="#" class="nav-link">My Cart</a>
+                        </li>
+                        <li class="nav-item text-center d-lg-none border-bottom responsive-border py-2">
+    
+                            <a href="#" class="nav-link fw-bold bg-white rounded-3 " style="color: red;"><img
+                                    src="../img/logout 3.png" alt="">Log out</a>
+                        </li>
+    
+                        <!-- dropdown only visible in destop screen-->
+                        <li class="nav-item dropdown d-none d-lg-flex ms-2">
+                            <img class="" src="../img/log in.png" alt="User Icon" style="width: 2.5rem; height: 2.5rem;">
+    
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Gokul Selvan
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="d-flex align-items-center justify-content-between ps-2">
+                                    <img src="../img/user.png" class="" alt="Profile">
+                                    <a class="dropdown-item " href="#">My Profile</a>
+                                </li>
+    
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+    
+                                <li class="d-flex align-items-center justify-content-between ps-2"><img
+                                        src="../img/parcel.png" class="" alt=""><a class="dropdown-item " href="#">My
+                                        Orders</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+    
+                                <li class="d-flex align-items-center justify-content-between ps-2"><img
+                                        src="../img/cart2.png" class="" alt=""><a class="dropdown-item " href="#">My
+                                        cart</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+    
+                                <li class="d-flex align-items-center justify-content-between ps-2">
+                                    <img src="../img/logout 3.png" alt="">
+                                    <a class="dropdown-item " href="#" style="color: red;">Log Out</a>
+                                </li>
+    
+                            </ul>
+                        </li>
+    
+                        <!-- cart icon and only visible in destop screen -->
+                        <li class="nav-item ms-2 d-none d-lg-flex">
+                            <a href="#" class="nav-link d-flex align-items-center">
+                                <img class="" src="../img/shopping-cart.png" alt="User Icon" style="width: 2.5rem;">
+                                <!-- <span class="ms-2" style="font-size: 1.2em; color: var(--white);">Gokul Selvan</span> -->
+                            </a>
+                        </li>
+    
+                        <!-- logout icon and only visible in destop screen -->
+                        <li class="nav-item ms-2 d-none d-lg-flex">
+                            <a href="#" class="nav-link d-flex align-items-center">
+    
+                                <img class="" src="../img/logout.png" alt="User Icon" style="width: 2.6rem;">
+                                <!-- <span class="ms-2" style="font-size: 1.2em; color: var(--white);">Gokul Selvan</span> -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </nav>
+        <!-- Navbar end -->
+
+<!-- icon and name start -->
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-3 d-flex justify-content-end">
+                    <img src="../img/man.png" class="ps-2" style="width: 80px; max-height: 80px;" alt="user icon">
+                    <!-- <img src="../img/woman.png" class="ps-2" style="width: 80px; max-height: 80px;" alt="user icon"> -->
+                </div>
+                <div class="col-9 align-items-center ">
+                    <h2 class="text-primary" style="font-weight: 600;">welcome</h2>
+                    <h5>Gokul selvan</h5>
+                </div>
+            </div>
+        </div>
+<!-- icon and name end -->
+
+
+    <!-- settings start -->
+    <div class="container my-5" >
+        <!-- <h3>Welcome, Gokul Selvan</h3> -->
+        <div class="row" >
+
+            <!-- Sidebar Navigation for Large Screens start-->
+            <div class="col-md-3 d-none d-md-block" style="background-color: whitesmoke; border-radius: 10px;" >
+                <p class="text-center h4 my-3">Account Settings</p>
+                
+                <!-- link start -->
+
+                <ul class="nav flex-column nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link active " id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-info"
+                            type="button" role="tab" aria-controls="profile-info" aria-selected="true">
+                            <i class="fas fa-user me-1"></i> Profile Information
+                        </button>
+                    </li>
+                    <li>
+                        <hr class="divider">
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="address-tab" data-bs-toggle="tab" data-bs-target="#address-info"
+                            type="button" role="tab" aria-controls="address-info" aria-selected="false">
+                            <i class="fas fa-address-card me-1"></i> Your Address 
+                        </button>
+                    </li>
+                    <li>
+                        <hr class="divider">
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="password-tab" data-bs-toggle="tab" data-bs-target="#password-info"
+                            type="button" role="tab" aria-controls="password-info" aria-selected="false">
+                            <i class="fas fa-lock me-1"></i> Change Password
+                        </button>
+                    </li>
+                    <li>
+                        <hr class="divider">
+                    </li>
+                    <!-- Extra Buttons -->
+                    <li class="nav-item">
+                        <button class="nav-link" type="button">
+                            <i class="fas fa-shopping-bag me-1"></i> My Orders
+                        </button>
+                    </li>
+                    <li>
+                        <hr class="divider">
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" type="button">
+                            <i class="fas fa-shopping-cart me-1"></i> My Cart
+                        </button>
+                    </li>
+                    <li>
+                        <hr class="divider">
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link text-danger" type="button">
+                            <i class="fas fa-trash me-1"></i> Delete My Account
+                        </button>
+                    </li>
+                    <li>
+                        <hr class="divider">
+                    </li>
+                    <li class="nav-item mb-2">
+                        <button class="nav-link text-danger" type="button">
+                            <i class="fas fa-sign-out-alt me-1"></i> Log Out
+                        </button>
+                    </li>
+                </ul>
+                 <!-- link end -->
+            </div>
+            <!-- Sidebar Navigation for Large Screens end -->
+
+            <!-- Offcanvas Menu link for Small Screens start-->
+            <div class="d-block d-md-none mb-3">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu">
+                    Open Menu
+                </button>
+            </div>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav flex-column nav-pills" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-info"
+                                type="button" role="tab" aria-controls="profile-info" aria-selected="true">
+                                <i class="fas fa-user me-1"></i> Profile Information
+                            </button>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button  class="nav-link" id="address-tab" data-bs-toggle="tab" data-bs-target="#address-info"
+                                type="button" role="tab" aria-controls="address-info" aria-selected="false">
+                                <i class="fas fa-address-card me-1"></i> Your Address
+                            </button>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="password-tab" data-bs-toggle="tab" data-bs-target="#password-info"
+                                type="button" role="tab" aria-controls="password-info" aria-selected="false">
+                                <i class="fas fa-lock me-1"></i> Change Password
+                            </button>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <!-- Extra Buttons -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button">
+                                <i class="fas fa-shopping-bag me-1"></i> My Orders
+                            </button>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" type="button">
+                                <i class="fas fa-shopping-cart me-1"></i> My Cart
+                            </button>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-danger" type="button">
+                                <i class="fas fa-trash me-1"></i> Delete My Account
+                            </button>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-danger" type="button">
+                                <i class="fas fa-sign-out-alt me-1"></i> Log Out
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Offcanvas Menu for Small Screens end-->
+
+
+            <!-- Content for profile info,address,change pass start -->
+            <div class="col-md-9 ps-md-5">
+                <div class="tab-content" id="myTabContent">
+
+                    <!-- Profile Information -->
+                    <div class="tab-pane fade show active" id="profile-info" role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <h4>Profile Information 
+                            <a href="#" id="editProfile" class="btn btn-link">Edit</a>
+                        </h4>
+                        <form id="profileForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label"><strong>Name:</strong></label>
+                                <input type="text" class="form-control" id="name" value="Gokul Selvan" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label"><strong>Email:</strong></label>
+                                <input type="email" class="form-control" id="email" value="gokul@gmail.com" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile" class="form-label"><strong>Mobile:</strong></label>
+                                <input type="tel" class="form-control" id="mobile" value="1234567890" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label"><strong>Gender:</strong></label>
+                                <div>
+                                    <input type="radio" id="male" name="gender" value="Male" checked disabled>
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="Female" disabled>
+                                    <label for="female">Female</label>
+                                </div>
+                            </div>
+                            <!-- <a href="#" id="editProfile" class="btn btn-link">Edit</a> -->
+                        </form>
+                    </div>
+
+
+                    <!-- Address Information -->
+                    <div class="tab-pane fade" id="address-info" role="tabpanel" aria-labelledby="address-tab">
+                        <!-- <h4>Your Address</h4> -->
+                       
+                            <h4>Your Address<a href="#" id="editAddress" class="btn btn-link" >Edit</a></h4>
+                            
+                            
+                       
+                        <form id="addressForm">
+                            <div class="mb-3">
+                                <label for="address" class="form-label"><strong>Address:</strong></label>
+                                <input type="text" class="form-control" id="address" value="128/6, S S Kovil Street"
+                                    readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="city" class="form-label"><strong>City:</strong></label>
+                                <input type="text" class="form-control" id="city" value="Arumuganeri" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="state" class="form-label"><strong>State:</strong></label>
+                                <input type="text" class="form-control" id="state" value="Tamil Nadu" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pincode" class="form-label"><strong>Pin Code:</strong></label>
+                                <input type="text" class="form-control" id="pincode" value="628202" readonly>
+                            </div>
+                            <!-- <a href="#" id="editAddress" class="btn btn-link">Edit</a> -->
+                        </form>
+                    </div>
+
+
+                    <!-- Change Password -->
+                    <div class="tab-pane fade" id="password-info" role="tabpanel" aria-labelledby="password-tab">
+                        <h4>Change Password</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="currentPassword" class="form-label">Current Password</label>
+                                <input type="password" class="form-control" id="currentPassword">
+                            </div>
+                            <div class="mb-3">
+                                <label for="newPassword" class="form-label">New Password</label>
+                                <input type="password" class="form-control" id="newPassword">
+                            </div>
+                            <button type="submit" class="btn btn-success">Change Password</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+           <!-- Content for profile info,address,change pass end -->
+
+        </div>
+    </div>
+    <!-- settings end -->
+
+
+
+
+    <!-- edit and save change js -->
+    <script src="../js/Account Settings.js"></script>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Accordion</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .accordion {
+      max-width: 300px; /* Optional: Set the width for the vertical accordion */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .accordion-item {
+      border: none; /* Remove default border between items */
+    }
+    .accordion-button {
+      border-radius: 0; /* Optional: Flat button edges */
+      text-align: left; /* Align text to the left */
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Vertical Accordion</h1>
+    <div class="accordion d-flex flex-column" id="verticalAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="vHeadingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#vCollapseOne" aria-expanded="true" aria-controls="vCollapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="vCollapseOne" class="accordion-collapse collapse show" aria-labelledby="vHeadingOne" data-bs-parent="#verticalAccordion">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> Customize the content here.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="vHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vCollapseTwo" aria-expanded="false" aria-controls="vCollapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="vCollapseTwo" class="accordion-collapse collapse" aria-labelledby="vHeadingTwo" data-bs-parent="#verticalAccordion">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> Add your custom content here.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="vHeadingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vCollapseThree" aria-expanded="false" aria-controls="vCollapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="vCollapseThree" class="accordion-collapse collapse" aria-labelledby="vHeadingThree" data-bs-parent="#verticalAccordion">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> Customize it as needed.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

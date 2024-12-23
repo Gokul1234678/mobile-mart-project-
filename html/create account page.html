@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create account page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- global css -->
+    <link rel="stylesheet" href="../css/global css.css">
+
+    <!-- create account page(this page css) -->
+    <link rel="stylesheet" href="../css/create account page style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header mb-2 justify-content-center">
+            Welcome To
+            <img src="../img/logo.png" alt="Brand Logo">
+        </div>
+
+        <div class="sub-header my-5">
+            <p class="h3" style="color: var(--voilet);">Create an Account</p>
+            Find the Perfect Fit for Your Pocket
+        </div>
+
+        <!-- Form -->
+        <form>
+            <!-- Name & Email -->
+            <div class="row mb-3">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter The Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" placeholder="Enter The Email">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Password & Confirm Password -->
+            <div class="row mb-3">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Confirm Password">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone Number & Gender start-->
+            <div class="row mb-3">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-md-2 my-3">
+                    <label class="form-check-label me-3">Gender:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Phone Number & Gender end -->
+
+            <!-- Address Details -->
+            <label class="form-label fw-bold my-3">Add Address Details:</label>
+            <textarea class="form-control mb-3" rows="2" placeholder="Enter Street Address"></textarea>
+            <div class="row mb-4 ">
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <input type="text" class="form-control" placeholder="City">
+                </div>
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <input type="text" class="form-control" placeholder="State">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Pin Code">
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-custom w-100">Create Account</button>
+        </form>
+
+        <!-- Login Text -->
+        <div class="login-text">
+            Already have an account? <a href="#">Login</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

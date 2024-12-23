@@ -1,0 +1,61 @@
+.cus-logo {
+    max-width: 180px;
+}
+
+.my-change1 {
+    font-size: 1.5rem;
+    /* width: 400px; */
+    border-radius: 10px;
+}
+
+.my-change1 button {
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+/* user logo */
+.cus-user img {
+    width: 3rem;
+
+}
+.cus-user span {
+    font-size: 1.5rem; 
+    color: var(--white);
+
+}
+
+/* quotes start */
+.quote-custom {
+    font-size: larger;
+    color: #0dffe9;
+    font-size: 4em;
+    font-family: "Comic Neue", cursive;
+    font-weight: 450;
+    font-style: normal;
+
+}
+
+/* quotes end */
+
+@media screen and (max-width: 480px) {
+
+    /* brand logo */
+    .cus-logo {
+        max-width: 130px;
+    }
+
+    /* user logo */
+    .cus-user img {
+        width: 2rem;
+
+    }
+
+    .cus-user span {
+        font-size: 1rem; 
+
+    
+    }
+
+
+}

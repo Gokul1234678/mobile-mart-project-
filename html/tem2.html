@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - Mobile Mart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .container h1 {
+      color: purple;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .container img {
+      display: block;
+      margin: 0 auto;
+      height: 50px;
+    }
+
+    .container h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 8px 10px;
+      gap: 10px;
+      background-color: #fff;
+    }
+
+    .input-group input {
+      border: none;
+      outline: none;
+      width: 100%;
+    }
+
+    .gender {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .gender label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .address-group {
+      margin-bottom: 10px;
+    }
+
+    .address-group input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .address-group .small-inputs {
+      display: flex;
+      gap: 10px;
+    }
+
+    .address-group .small-inputs input {
+      width: 100%;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      background-color: #28a745;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .login-link a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome To</h1>
+    <img src="https://via.placeholder.com/150x50?text=Mobile+Mart" alt="Mobile Mart Logo">
+    <h3>Create an Account</h3>
+    <p style="text-align: center; color: grey;">Find the Perfect Fit for Your Pocket</p>
+
+    <!-- Input Fields -->
+    <div class="input-group">
+      <i class="fa fa-user"></i>
+      <input type="text" placeholder="Enter The Name">
+    </div>
+    <div class="input-group">
+      <i class="fa fa-envelope"></i>
+      <input type="email" placeholder="Enter The Email">
+    </div>
+    <div class="input-group">
+      <i class="fa fa-lock"></i>
+      <input type="password" placeholder="Password">
+    </div>
+    <div class="input-group">
+      <i class="fa fa-lock"></i>
+      <input type="password" placeholder="Confirm Password">
+    </div>
+    <div class="input-group">
+      <i class="fa fa-phone"></i>
+      <input type="tel" placeholder="Phone Number">
+    </div>
+
+    <!-- Gender -->
+    <div class="gender">
+      <label><input type="radio" name="gender"> Male</label>
+      <label><input type="radio" name="gender"> Female</label>
+    </div>
+
+    <!-- Address Details -->
+    <h4>Add Address Details:</h4>
+    <div class="address-group">
+      <input type="text" placeholder="Enter Street Address">
+      <div class="small-inputs">
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="State">
+        <input type="text" placeholder="Pin Code">
+      </div>
+    </div>
+
+    <!-- Button -->
+    <button>Create Account</button>
+
+    <!-- Login Link -->
+    <div class="login-link">
+      Already have an account? <a href="#">Login</a>
+    </div>
+  </div>
+</body>
+</html>
